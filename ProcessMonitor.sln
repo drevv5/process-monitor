@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessMonitor", "ProcessMonitor\ProcessMonitor.csproj", "{4E14492C-5B84-418A-92E0-D92E411256C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessMonitor", "ProcessMonitor\ProcessMonitor.csproj", "{4E14492C-5B84-418A-92E0-D92E411256C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessMonitor.Tests", "ProcessMonitor.Tests\ProcessMonitor.Tests.csproj", "{2C1D26B7-EA53-4557-8836-C6B711AC8C3C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4E14492C-5B84-418A-92E0-D92E411256C7} = {4E14492C-5B84-418A-92E0-D92E411256C7}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{4E14492C-5B84-418A-92E0-D92E411256C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E14492C-5B84-418A-92E0-D92E411256C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E14492C-5B84-418A-92E0-D92E411256C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C1D26B7-EA53-4557-8836-C6B711AC8C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C1D26B7-EA53-4557-8836-C6B711AC8C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C1D26B7-EA53-4557-8836-C6B711AC8C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C1D26B7-EA53-4557-8836-C6B711AC8C3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
